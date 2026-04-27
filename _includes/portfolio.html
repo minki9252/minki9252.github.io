@@ -1,24 +1,24 @@
 <style>
-    /* 이미지 규격 통일 및 정렬 최적화 */
+    /* 1. 이미지 높이를 강제로 통일하고 비율을 맞춤 */
     #portfolio .portfolio-box img {
-        width: 100%;
-        height: 280px;      /* 이미지 높이를 280px로 강제 고정 (원하는 높이로 조절 가능) */
-        object-fit: cover;  /* 핵심: 비율을 유지하면서 정해진 영역을 꽉 채움 */
-        object-position: center; /* 이미지의 중앙이 보이도록 설정 */
+        width: 100% !important;
+        height: 280px !important; /* 모든 이미지의 높이를 동일하게 고정 */
+        object-fit: cover;       /* 이미지 비율 유지하며 꽉 채움 */
+        object-position: center;  /* 이미지 중앙 정렬 */
         display: block;
     }
 
-    /* 반응형: 태블릿이나 모바일에서는 높이를 살짝 줄임 */
-    @media (max-width: 768px) {
-        #portfolio .portfolio-box img {
-            height: 220px;
-        }
+    /* 2. 행(Row) 사이의 불필요한 간격 제거 및 정렬 보정 */
+    #portfolio .row.no-gutter {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    /* 그리드 간격이 어긋나지 않도록 행(Row) 설정 */
-    .no-gutter > [class*='col-'] {
-        padding-right: 0;
-        padding-left: 0;
+    /* 3. 모바일 대응 */
+    @media (max-width: 768px) {
+        #portfolio .portfolio-box img {
+            height: 220px !important;
+        }
     }
 </style>
 
@@ -80,8 +80,9 @@
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">Next Project</div>
                             <div class="project-name">업데이트 예정</div>
+                        </div>
                     </div>
-                </a>
+                </div>
             </div>
 
             <div class="col-lg-4 col-sm-6">
@@ -95,6 +96,4 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </div> </div> </section>
