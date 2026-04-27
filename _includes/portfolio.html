@@ -1,3 +1,20 @@
+<style>
+    /* (주)IMTS 제출용: 이미지 규격 통일 스타일 */
+    .portfolio-box img {
+        width: 100%;
+        height: 250px;      /* 모든 이미지 높이를 250px로 고정 */
+        object-fit: cover;  /* 비율 유지하며 꽉 채움 */
+        object-position: center;
+    }
+    
+    /* 모바일에서는 높이를 조금 줄여 가독성을 높임 */
+    @media (max-width: 768px) {
+        .portfolio-box img {
+            height: 200px;
+        }
+    }
+</style>
+
 <section class="no-padding" id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter">
@@ -66,25 +83,24 @@
             </div>
 
             <div class="col-lg-4 col-sm-6">
-                <div class="portfolio-box">
-                    <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                <a href="#" class="portfolio-box" target="_blank">
+                    <img src="img/portfolio/delivery_mfc.jpg" class="img-responsive" alt="MFC Delivery App">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Next Project
+                                Windows Programming (MFC)
                             </div>
                             <div class="project-name">
-                                업데이트 예정
+                                요기요 배달 시스템 구현
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-        </div>
 
             <div class="col-lg-4 col-sm-6">
                 <div class="portfolio-box">
-                    <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                    <img src="img/portfolio/6.jpg" class="img-responsive" alt="Coming Soon">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -97,6 +113,4 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </div> </div> </section>
