@@ -1,12 +1,13 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: MetalGuard Portfolio
+email: 본인의 이메일 주소 (예: minki@example.com)
+description: >- # 웹사이트에 대한 짧은 설명입니다.
+  산업용 카메라와 딥러닝을 활용한 금속 표면 결함 검출 시스템(MetalGuard) 및 소프트웨어 개발 포트폴리오입니다.
+baseurl: "" # 그대로 두세요.
+url: "https://minki9252.github.io" # 본인의 GitHub Pages 주소로 변경하세요.
 
-twitter_username:
-github_username:
+twitter_username: # 없다면 비워두셔도 됩니다.
+github_username: minki9252
 
 # Build settings
 markdown: kramdown
