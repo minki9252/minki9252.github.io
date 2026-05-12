@@ -1,14 +1,15 @@
-# Creative Theme for Jekyll
+# 김민기 포트폴리오
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+산업용 AI, 머신비전, 임베디드 UI 개발 경험을 정리한 개인 포트폴리오 사이트입니다.
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
+## 주요 내용
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
+- 실시간 금속 표면 결함 검출 프로젝트
+- 딥러닝 기반 알약 식별 프로젝트
+- Ubuntu 서버 및 Qt 기반 UI 프로젝트
+- 검사 결과 저장, 소켓 통신, 성능 최적화 경험
 
-## To use the Creative Theme template in your project
+## 사이트
 
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
+<https://minki9252.github.io/>
 

@@ -67,6 +67,27 @@ aside {
     padding: 0;
 }
 
+#portfolio {
+    .portfolio-box img {
+        width: 100% !important;
+        height: 280px !important;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    .row.no-gutter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+        .portfolio-box img {
+            height: 220px !important;
+        }
+    }
+}
+
 // Navigation
 
 .navbar-default {
@@ -245,7 +266,8 @@ header {
             top: 50%;
             transform: translateY(-50%);
             .project-category,
-            .project-name {
+            .project-name,
+            .project-description {
                 @include sans-serif-font;
                 padding: 0 15px;
             }
@@ -256,6 +278,13 @@ header {
             }
             .project-name {
                 font-size: 18px;
+                font-weight: 700;
+            }
+            .project-description {
+                font-size: 13px;
+                line-height: 1.5;
+                margin-top: 10px;
+                color: rgba(white, .9);
             }
         }
     }
@@ -272,6 +301,9 @@ header {
                 }
                 .project-name {
                     font-size: 22px;
+                }
+                .project-description {
+                    font-size: 14px;
                 }
             }
         }

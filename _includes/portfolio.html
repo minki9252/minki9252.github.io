@@ -1,104 +1,79 @@
-<!-- CSS 스타일 부분은 기존과 동일하므로 생략하지 않고 유지합니다 -->
-<style>
-    /* 1. 이미지 높이를 강제로 통일하고 비율을 맞춤 */
-    #portfolio .portfolio-box img {
-        width: 100% !important;
-        height: 280px !important; /* 모든 이미지의 높이를 동일하게 고정 */
-        object-fit: cover;       /* 이미지 비율 유지하며 꽉 채움 */
-        object-position: center;  /* 이미지 중앙 정렬 */
-        display: block;
-    }
-
-    /* 2. 행(Row) 사이의 불필요한 간격 제거 및 정렬 보정 */
-    #portfolio .row.no-gutter {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* 3. 모바일 대응 */
-    @media (max-width: 768px) {
-        #portfolio .portfolio-box img {
-            height: 220px !important;
-        }
-    }
-</style>
-
 <section class="no-padding" id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter">
-            <!-- 1. MetalGuard -->
             <div class="col-lg-4 col-sm-6">
                 <a href="https://github.com/minki9252/MetalGuard/tree/client" class="portfolio-box" target="_blank">
-                    <img src="img/portfolio/금속표면.jpg" class="img-responsive" alt="MetalGuard">
+                    <img src="img/portfolio/금속표면.jpg" class="img-responsive" alt="MetalGuard 금속 표면 결함 검출 프로젝트">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">Industrial AI & Vision</div>
-                            <div class="project-name">MetalGuard: 금속 표면 결함 검출</div>
+                            <div class="project-category text-faded">Representative Project</div>
+                            <div class="project-name">MetalGuard</div>
+                            <div class="project-description">금속 표면 결함 검출, 실시간 검사 UI, 추론 속도 최적화</div>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <!-- 2. PillscanAI -->
             <div class="col-lg-4 col-sm-6">
                 <a href="https://github.com/minki9252/PillscanAI.git" class="portfolio-box" target="_blank">
-                    <img src="img/portfolio/알약.jpg" class="img-responsive" alt="PillscanAI">
+                    <img src="img/portfolio/알약.jpg" class="img-responsive" alt="PillscanAI 알약 식별 프로젝트">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">Deep Learning / App</div>
-                            <div class="project-name">PillscanAI: 알약 식별 시스템</div>
+                            <div class="project-name">PillscanAI</div>
+                            <div class="project-description">이미지 기반 알약 식별과 사용자 입력 흐름을 결합한 AI 서비스</div>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <!-- 3. Cloud Storage -->
             <div class="col-lg-4 col-sm-6">
                 <a href="https://github.com/minki9252/someday_cloud" class="portfolio-box" target="_blank">
-                    <img src="img/portfolio/클라우드.jpg" class="img-responsive" alt="Cloud Storage">
+                    <img src="img/portfolio/클라우드.jpg" class="img-responsive" alt="Ubuntu 기반 개인용 클라우드 저장소 프로젝트">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">Network / Server (Ubuntu)</div>
-                            <div class="project-name">개인용 클라우드 파일 저장소</div>
+                            <div class="project-name">Personal Cloud Storage</div>
+                            <div class="project-description">Ubuntu 서버 환경에서 파일 저장, 접근, 관리 흐름을 구현</div>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <!-- 4. Qt Kiosk -->
             <div class="col-lg-4 col-sm-6">
                 <a href="https://github.com/minki9252/TheVentiKiosk" class="portfolio-box" target="_blank">
-                    <img src="img/portfolio/더벤티.png" class="img-responsive" alt="Qt Kiosk">
+                    <img src="img/portfolio/더벤티.png" class="img-responsive" alt="Qt 기반 더벤티 키오스크 프로젝트">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">Embedded UI (Qt / Ubuntu)</div>
-                            <div class="project-name">더벤티 키오스크 시스템</div>
+                            <div class="project-name">TheVenti Kiosk</div>
+                            <div class="project-description">주문 화면, 상태 흐름, 사용자 조작을 고려한 Qt UI 구현</div>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <!-- 5. 사용성테스트 (태그 닫기 오류 수정됨) -->
             <div class="col-lg-4 col-sm-6">
                 <a href="https://github.com/kimbeamjun/machine-vision-ut/tree/client" class="portfolio-box" target="_blank">
-                    <img src="img/portfolio/eye.jpg" class="img-responsive" alt="Usability Test">
+                    <img src="img/portfolio/eye.jpg" class="img-responsive" alt="머신비전 사용성 테스트 프로젝트">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">Machine Vision UX Test</div>
-                            <div class="project-name">사용성테스트</div>
+                            <div class="project-name">Usability Test</div>
+                            <div class="project-description">검사 화면의 사용성, 오류 보고, 작업 흐름 개선을 검증</div>
                         </div>
                     </div>
-                </a> <!-- 이 부분의 <a> 태그 닫기가 누락되어 있었습니다 -->
+                </a>
             </div>
 
-            <!-- 6. 업데이트 예정 (구조 통일) -->
             <div class="col-lg-4 col-sm-6">
                 <a href="javascript:void(0)" class="portfolio-box">
-                    <img src="img/portfolio/6.jpg" class="img-responsive" alt="Coming Soon">
+                    <img src="img/portfolio/6.jpg" class="img-responsive" alt="추가 프로젝트 준비 중">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">Next Project</div>
-                            <div class="project-name">업데이트 예정</div>
+                            <div class="project-name">Preparing</div>
+                            <div class="project-description">진행 프로젝트는 완성도와 설명 자료를 정리한 뒤 추가 예정입니다.</div>
                         </div>
                     </div>
                 </a>

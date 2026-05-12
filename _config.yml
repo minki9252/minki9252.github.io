@@ -1,11 +1,10 @@
 # Site settings
-title: Minki's Portfolio | Industrial AI Engineer
+title: 김민기 포트폴리오 | Industrial AI & Vision Engineer
 email: kenya7938@gmail.com
 description: > 
-  Industrial AI & Machine Vision Developer Portfolio
+  실시간 검사, 머신비전, 임베디드 UI를 중심으로 산업 현장에 적용 가능한 AI 소프트웨어를 만드는 개발자 김민기의 포트폴리오입니다.
 baseurl: "" 
 url: "https://minki9252.github.io" 
 
 # Social accounts
 github_username: minki9252
-# twitter_username 항목은 사용하지 않는다면 비워두셔도 됩니다.
